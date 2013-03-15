@@ -1,0 +1,712 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/select2.css">
+
+    <script src="javascript/jquery-1.8.2.min.js"></script>
+    <script src="javascript/jquery.browserDetected.js"></script>
+    <script src="javascript/index.js"></script>
+    <script src="javascript/select2.js"></script>
+
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".custom").select2({
+                formatResult: format,
+                formatSelection: format,
+                escapeMarkup: function(m) { return m; }
+            });
+            $(document).click( function(event){
+                if( $(event.target).closest(".b-zoom-item.show").length )
+                    return;
+                $(".b-zoom-item").removeClass("show");
+
+            });
+        })
+    </script>
+
+    <div class="b-header-wrapper">
+        <div class="b-header">
+            <ul class="links-items">
+                <li class="link-item active" style="padding-left: 0; border-left: none">
+                    <a href="">Home</a>
+                </li>
+                <li class="link-item">
+                    <a href="">About US</a>
+                </li>
+                <li class="link-item">
+                    <a href="">Staff picks</a>
+                </li>
+                <li class="link-item">
+                    <a href="">How to shop</a>
+                </li>
+                <div class="user-panel">
+
+                </div>
+            </ul>
+            <div class="user-panel">
+                <div class="custom-select">
+                    <select class="set-locale custom" name="set-locale" id="set-locale">
+                        <option value="en">English</option>
+                        <option value="ru">Russian</option>
+                        <option value="de">Germany</option>
+                    </select>
+                    <select class="set-currency custom" name="set-currency" style="width: 66px" id="set-currency">
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                    </select>
+                </div>
+                <span class="welcome">Welcome, <span class="user">Ilya</span>!
+                    <div class="user-links" style="padding-left: 7px; border-left: none"><a href="">Sign out</a></div>
+                    <div class="user-links"><a href="">Help</a></div>
+                </span>
+            </div>
+         </div>
+    </div>
+    <div class="b-content-wrapper">
+        <div class="b-content">
+            <div class="search-panel">
+                <img src="images/logo.png" alt="" class="logo-image">
+
+                <div class="user-recycle">
+                    <div class="recycle-button">&#9658;</div>
+                    <div class="recycle-info">
+                        <h4 class="recycle-title">My Cart</h4>
+                        <span class="count">3</span>
+                        <span class="label-item"> items</span>
+                        <span>( <span class="count">55</span> USD)</span>
+                    </div>
+                </div>
+                <div class="b-search">
+                    <div class="line-search">
+                        <input id="search-input" type="text"accept="">
+                        <span class="button-search"></span>
+                    </div>
+                </div>
+                <div class="search-label">Search</div>
+            </div>
+            <div class="sidebar">
+                <ul class="menu-items">
+                    <li class="menu-item">latest
+                        <div class="right-bg">
+                        </div>
+                    </li>
+                    <li class="menu-item">Items on sale
+                        <div class="right-bg"></div>
+                    </li>
+                    <li class="menu-item active">Bestsellers
+                        <div class="right-bg"></div>
+                    </li>
+                    <li class="menu-item">Health and well
+                        <div class="right-bg"></div>
+                    </li>
+                    <li class="menu-item">For Photography
+                        <div class="right-bg"></div>
+                    </li>
+                    <li class="menu-item">Toys
+                        <div class="right-bg">
+                    </li>
+                    <li class="menu-item">Watches
+                        <div class="right-bg"></div>
+                    </li>
+                    <li class="menu-item">Glasses
+                        <div class="right-bg"></div>
+                    </li>
+                    <li class="menu-item" style="border-bottom: none;">OTHERS
+                        <div class="right-bg"></div>
+                    </li>
+                </ul>
+                <div class="sidebar-banner">
+                    <img src="images/banner-left-1.png" alt="">
+                </div>
+                <div class="sidebar-banner">
+                    <img src="images/banner-left-2.png" alt="">
+                </div>
+            </div>
+            <div class="b-content-inner">
+                <div class="content-banner">
+                    <img src="images/top-banner.png" alt="">
+                </div>
+                <h1 class="content-header">Here is what we have handpicked for you</h1>
+                <div class="catalog">
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-1.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-1.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-2.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-2.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-3.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-3.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-4.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-4.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-1.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-1.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-2.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-2.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-3.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-3.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-4.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-4.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-1.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-1.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-2.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-2.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-3.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-3.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-4.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-4.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-1.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-1.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-2.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-2.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-3.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-3.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="item-body">
+                            <div class="label"></div>
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-4.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            $<span class="price-round">192</span>.02
+                            <div class="button-buy"></div>
+                        </div>
+                        <div class="b-zoom-item">
+                            <div class="catalog-item-inner">
+                                <img class="item-image" src="images/item-4.png" alt="">
+                                <div class="item-description">
+                                    <h6 class="name">ULTRA LIGHT PARKA </h6>
+                                    <span class="info">Blue Woman Jacket by Uniqlo</span>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                $<span class="price-round">192</span>.02
+                                <div class="add-label">ADD TO CART</div>
+                                <div class="button-buy"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br class="clear">
+        </div>
+    </div>
+    <div class="b-footer-wrapper">
+        <div class="b-footer">
+            <div class="online-services float">
+                <div class="subscribe">
+                    <div class="sub-label">SUBSCRIBE</div>
+                    <div class="sub-line-text">
+                        <input type="text" name="e-mail" id="subscribe-input">
+                        <div class="sub-button"></div>
+                    </div>
+                </div>
+                <div class="social-networks">
+                    <img src="images/rss.png" class="float" alt="">
+                    <a class="link-rss" href="">RSS</a>
+                    <a class="social-link" href="">
+                        <img src="images/youtube.png" alt="">
+                    </a>
+                    <a class="social-link" href="">
+                        <img src="images/twitter.png" alt="">
+                    </a>
+                    <a class="social-link" href="">
+                        <img src="images/facebook.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="site-map">
+                <ul class="site-map-items">
+                    <li class="site-map-item float">
+                        <h5 class="site-map-item-title">Products</h5>
+                        <ul class="site-map-items-inner">
+                            <li class="site-map-item-inner"><a href="">Food suppliments</a></li>
+                            <li class="site-map-item-inner"><a href="">Ipad accessories</a></li>
+                            <li class="site-map-item-inner"><a href="">Crafts</a></li>
+                            <li class="site-map-item-inner"><a href="">Product reviews</a></li>
+                        </ul>
+                    </li>
+                    <li class="site-map-item float">
+                        <h5 class="site-map-item-title">Legal</h5>
+                        <ul class="site-map-items-inner">
+                            <li class="site-map-item-inner"><a href="">Terms and conditions</a></li>
+                            <li class="site-map-item-inner"><a href="">Frequently asked questions</a></li>
+                            <li class="site-map-item-inner"><a href="">Shipping information</a></li>
+                            <li class="site-map-item-inner"><a href="">Table cell</a></li>
+                        </ul>
+                    </li>
+                    <li class="site-map-item float">
+                        <h5 class="site-map-item-title">Contact</h5>
+                        <ul class="site-map-items-inner">
+                            <li class="site-map-item-inner"><a href="">Sales</a></li>
+                            <li class="site-map-item-inner"><a href="">Advertisment</a></li>
+                            <li class="site-map-item-inner"><a href="">Shipping</a></li>
+                            <li class="site-map-item-inner"><a href="">Site Issues</a></li>
+                        </ul>
+                    </li>
+                    <li class="site-map-item float">
+                        <h5 class="site-map-item-title">About this site</h5>
+                        <ul class="site-map-items-inner">
+                            <li class="site-map-item-inner"><a href="">Our team</a></li>
+                            <li class="site-map-item-inner"><a href="">Company blog aka news</a></li>
+                            <li class="site-map-item-inner"><a href="">Company blog aka news</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    <span class="float">© 2010 Didogo s.r.o.   Language: <a href="" class="language">English</a>   Curency: <a href="" class="curency">USD</a></span>
+                    <ul class="links-items float">
+                        <li class="link-item" style="padding-left: 0; border-left: none">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="link-item">
+                            <a href="">Sign Out</a>
+                        </li>
+                        <li class="link-item">
+                            <a href="">Help</a>
+                        </li>
+                        <li class="link-item">
+                            <a href="">My Cart</a>
+                        </li>
+                    </ul>
+                    <div class="design-by">
+                        Design by
+                        <img class="image-label" src="images/design-by.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
