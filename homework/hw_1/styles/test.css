@@ -31,8 +31,52 @@
 .b-page-header .page-head {
 	font: 72px 'PT Serif', serif;
 	margin: 0;
+	font-weight: bold;
 }
 
-.b-page-header .page-title-items .page-title-item {
-	display: inline-block;		
+.b-page-header .page-header-title {
+	font: 18px 'PT Sans', sans-serif;
+}
+
+.b-page-header .page-header-title  .dotted {
+	background: url('../images/dott.png') no-repeat center center;
+	display: inline-block;
+	width: 8px;
+	height: 10px;
+}
+
+
+.b-page-header {
+	width: 841px;
+	margin: 0 auto;
+}
+
+.b-page-content {
+	width: 841px;
+	margin: 0 auto;
+}
+
+.news-item {
+	position: relative;
+	margin: 10px 0 46px 0;
+}
+
+.news-item-image {
+	float: left;
+	margin: 0 0 0 42px;
+}
+
+.news-item-content {
+	padding: 0 0 0 242px;
+}
+
+.news-item-header {
+	font: 18px 'PT Sans', sans-serif;
+	margin: 0;
+	text-decoration: underline;
+}
+
+.news-item-description {
+	margin: 10px 0 0 0;
+	font: 14px 'PT Sans', sans-serif;
 }
