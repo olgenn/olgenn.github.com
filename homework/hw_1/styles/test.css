@@ -1,3 +1,7 @@
+body {
+	background: url('../images/body-bg.png');
+}
+
 .b-page-wrapper {
 	width: 1181px;
 	position: relative;
@@ -75,15 +79,6 @@
 	font: 14px 'PT Sans', sans-serif;
 }
 
-.b-page-footer {
-	width: 800px;
-	height: 94px;
-	padding: 14px 0 0 0;
-	margin: 93px auto 0;
-	border-top: 1px solid #8f8f8f;
-}
-
-
 .copyright {
 	font: 12px 'PT Sans', sans-serif;
 	color: #666666;
@@ -113,4 +108,13 @@
 
 .b-genre-label.investigation {
 	background: #6699cc;
+}
+
+
+.b-page-footer {
+	width: 800px;
+	height: 94px;
+	padding: 14px 0 0 0;
+	margin: 82px auto 0;
+	border-top: 1px solid #8f8f8f;
 }
