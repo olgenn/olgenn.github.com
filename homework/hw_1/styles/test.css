@@ -2,13 +2,13 @@
 	width: 1181px;
 	position: relative;
 	margin: 0 auto;
-	padding: 13px 9px 0;
+	padding: 10px 9px 0;
 }
 
 .page-label {
 	float: left;
 	text-transform: uppercase;
-	font: 24px 'PT Sans', sans-serif;
+	font: 17px 'PT Sans', sans-serif;
 	font-weight: bold;
 }
 
@@ -18,12 +18,13 @@
 	color: #666666;
 	font: 14px 'PT Sans', sans-serif;
 	border-bottom: 1px #666 dotted;
+	margin: 4px 0 0 0;
 }
 
 .b-page-header {
 	width: 841px;
-	padding: 88px 0 0 0;
-	height: 208px;
+	padding: 68px 0 0 0;
+	height: 232px;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -35,7 +36,7 @@
 }
 
 .b-page-header .page-header-title {
-	font: 18px 'PT Sans', sans-serif;
+	font: 18px/28px 'PT Sans', sans-serif;
 }
 
 .b-page-header .page-header-title  .dotted {
@@ -45,12 +46,6 @@
 	height: 10px;
 }
 
-
-.b-page-header {
-	width: 841px;
-	margin: 0 auto;
-}
-
 .b-page-content {
 	width: 841px;
 	margin: 0 auto;
@@ -58,16 +53,16 @@
 
 .news-item {
 	position: relative;
-	margin: 10px 0 46px 0;
+	margin: 10px 0 54px 0;
 }
 
 .news-item-image {
 	float: left;
-	margin: 0 0 0 42px;
+	margin: 0 0 0 38px;
 }
 
 .news-item-content {
-	padding: 0 0 0 242px;
+	padding: 0 0 0 238px;
 }
 
 .news-item-header {
@@ -77,6 +72,20 @@
 }
 
 .news-item-description {
-	margin: 10px 0 0 0;
+	margin: 3px 0 0 0;
 	font: 14px 'PT Sans', sans-serif;
+}
+
+.b-page-footer {
+	width: 841px;
+	height: 94px;
+	padding: 14px 0 0 0;
+	margin: 93px auto 0;
+	border-top: 1px solid #8f8f8f;
+}
+
+
+.copyright {
+	font: 12px 'PT Sans', sans-serif;
+	color: #666666;
 }
