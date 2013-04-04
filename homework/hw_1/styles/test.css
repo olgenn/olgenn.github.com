@@ -114,7 +114,7 @@ body {
 .b-page-footer {
 	width: 800px;
 	height: 94px;
-	padding: 14px 0 0 0;
+	padding: 13px 0 0 3px;
 	margin: 82px auto 0;
 	border-top: 1px solid #8f8f8f;
 }
