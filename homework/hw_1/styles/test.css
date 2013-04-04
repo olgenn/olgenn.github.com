@@ -89,3 +89,29 @@
 	font: 12px 'PT Sans', sans-serif;
 	color: #666666;
 }
+
+.b-genre-label {
+	height: 22px;
+	padding: 0 6px;
+	color: #fff;
+	font: 14px/25px 'PT Sans', sans-serif;
+	font-style: italic;
+	text-align: center;
+	position: absolute;
+	top: -10px;
+	left: 0;
+}
+
+.b-genre-label.scandal {
+	background: #ff6666;
+}
+
+
+.b-genre-label.intrigue  {
+	background: #99cc66;
+}
+
+
+.b-genre-label.investigation {
+	background: #6699cc;
+}
