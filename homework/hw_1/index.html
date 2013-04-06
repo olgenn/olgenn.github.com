@@ -8,9 +8,27 @@
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic|PT+Serif:700' rel='stylesheet' type='ext/css'>
 </head>
 <body>
-	<div class="b-page-wrapper">
-		<span class="page-label">LOREM IPSUM NEWS</span>
-		<a href="#" class="log-in">Войти</a>
+	<div class="b-login-layer" id="b-login">
+			<div class="login-window">
+				<form action="#" id="login-form">
+					<input type="text" class="login-input" placeholder="Логин">
+					<input type="password" class="login-input" placeholder="Пароль">
+					<div class="login-buttons">	
+						<input type="submit" value="Войти">
+						<span class="log-in-cancel"  onclick="document.getElementById('b-login').style.display='none';document.getElementById('b-page-wrapper').className = 'b-page-wrapper';">
+							Отмена
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	<div class="b-page-wrapper" id="b-page-wrapper">
+		<span class="page-label">
+			LOREM IPSUM NEWS
+		</span>
+		<span href="#" class="log-in" onclick="document.getElementById('b-login').style.display='block';document.getElementById('b-page-wrapper').className = 'b-page-wrapper login';">
+			Войти
+		</span>
 		<header class="b-page-header">
 			<h1 class="page-head">Новости</h1>
 			
@@ -59,18 +77,6 @@
 				© ЗАО «Лорем ипсум ньюс»
 			</div>
 		</footer>
-		<div class="b-login-layer">
-			<div class="login-window">
-				<form action="#" id="login-form">
-					<input type="text" class="login-input" placeholder="Логин">
-					<input type="password" class="login-input" placeholder="Пароль">
-					<div class="login-buttons">	
-						<input type="submit" value="Войти">
-						<a href="#" class="log-in">Отмена</a>
-					</div>
-				</form>
-			</div>
-		</div>
 	</div>	
 </body>
 </html>

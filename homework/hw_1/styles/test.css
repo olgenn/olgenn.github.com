@@ -10,6 +10,11 @@ body {
 	border-top: 2px solid #000;
 }
 
+.b-page-wrapper.login {
+	-webkit-filter: blur(1px);
+	filter: blur(2px);
+}
+
 .page-label {
 	float: left;
 	text-transform: uppercase;
@@ -17,7 +22,8 @@ body {
 	font-weight: bold;
 }
 
-.log-in {
+.log-in,
+.log-in-cancel {
 	float: right;
 	text-decoration: none;
 	color: #666666;
@@ -122,10 +128,13 @@ body {
 
 .b-login-layer {
 	position: fixed;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
+	background: url('../images/login-bg.png');
+	display: none;
 }
 
 .login-window {
@@ -138,6 +147,11 @@ body {
 	height: 173px;
 	background: #fff;
 	box-shadow: 1px 0px 40px 7px #000;
+}
+
+.login-buttons {
+	margin: 23px 0 0 0;
+	width: 127px;
 }
 
 .login-window .login-input {
