@@ -76,10 +76,10 @@ body {
 	padding: 0 0 0 200px;
 }
 
-.news-item-header {
+.news-item-header a{
 	font: 18px/21px 'PT Sans', sans-serif;
 	margin: 0;
-	text-decoration: underline;
+	color: #000;
 }
 
 .news-item-description {
