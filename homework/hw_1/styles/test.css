@@ -53,7 +53,7 @@ body {
 .page-label {
 	float: left;
 	text-transform: uppercase;
-	font: 17px 'PT Sans', sans-serif;
+	font: 17px/17px 'PT Sans', sans-serif;
 	font-weight: bold;
 	text-decoration: none;
 	color: #000;
@@ -126,7 +126,7 @@ body {
 
 .navigation-items .navigation-item {
 	display:inline-block;
-	padding: 0 10px 0 0;
+	padding: 0 15px 0 0;
 }
 
 .navigation-items .navigation-item a {
