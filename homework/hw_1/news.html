@@ -6,57 +6,49 @@
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles/test.css">
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic|PT+Serif:700' rel='stylesheet' type='ext/css'>
+	<script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
 	<div class="b-page-wrapper" id="b-page-wrapper">
-		<span class="page-label">
+		<a href='index.html' class="page-label">
 			LOREM IPSUM NEWS
-		</span>
-		<a href="#" class="log-in" onclick="document.getElementById('b-login').style.display='block';document.getElementById('b-page-wrapper').className = 'b-page-wrapper login';">
-			Войти
 		</a>
-		<header class="b-page-header">
-			<h1 class="page-head">Новости</h1>
-			
-			<div class="page-header-title">
-				<span>скандалы</span>
-				<i class="dotted"></i>
-				<span>интриги</span>
-				<i class="dotted"></i>
-				<span>расследования</span>
-			</div>
-		</header>
-		<div class="b-page-content clearfix">
-				<div class="news-item clearfix">
-					<div class="b-genre-label scandal">Скандал</div>
-					<img src="images/news-image-1.jpg" class="news-item-image" alt="news-image-1.png">
-					<div class="news-item-content">
-						<h2 class="news-item-header"><a href="#">Страны Евросоюза могут ввести санкции против Google</a></h2>
-						<p class="news-item-description">
-							Европейские власти обеспокоены политикой конфиденциальности компании Google. Google хранит личные данные пользователей в одном профиле, в котором может объединяться информация с нескольких десятков разных сайтов.
-						</p>	
+		<nav class="b-page-navigation">
+			<ul class="navigation-items">
+				<li class="navigation-item active"><a href="#">Интернет</a></li>
+				<li class="navigation-item"><a href="#">Наука и техника</a></li>
+				<li class="navigation-item"><a href="#">ТВ и радио</a></li>
+				<li class="navigation-item"><a href="#">Культура</a></li>
+			</ul>
+		</nav>
+		<div class="b-page-content">
+			<article class="news-article clearfix">
+				<aside class="news-note">
+
+
+					Поисковая система Google была создана в&nbsp;качестве учебного проекта студентов Стэнфордского университета Ларри Пейджа и&nbsp;Сергея Брина. Они в&nbsp;1996 году работали над поисковой системой BackRub, а&nbsp;в&nbsp;1998 году на&nbsp;её&nbsp;основе создали новую поисковую систему Google.
+
+				</aside>
+				<div class="news-body">
+					<h1 class="news-header">
+						Google предложила пользователям завещать аккаунты на случай смерти
+					</h1>
+					<div class="news-content">
+						<p>Корпорация Google запустила функцию, позволяющую пользователям решить, что произойдет с&nbsp;их&nbsp;аккаунтами и&nbsp;данными после смерти. О&nbsp;нововедении сообщается в&nbsp;официальном <a href="#">блоге</a> компании.</p>
+
+						<p>В&nbsp;<a href="#">настройках</a> аккаунта пользователь сможет выбрать, какие данные (например, фото, контакты или видео из&nbsp;YouTube) перейдут под контроль доверенного лица. Google также может пересылать письма, поступающие на&nbsp;электронную почту пользователя, доверенному лицу или автоматически отвечать на&nbsp;них. Во&nbsp;втором случае текст письма должен ввести сам &laquo;завещатель&raquo;.</p>
+
+						<p>При желании пользователь может указать, что все его данные должны быть удалены после смерти. При настройке функции он&nbsp;должен указать, через сколько месяцев (три, шесть, девять или двенадцать) нулевой активности корпорации следует считать его умершим. В&nbsp;любом случае, Google сначала попытается связаться с&nbsp;владельцем аккаунта по&nbsp;СМС и&nbsp;запасному адресу электронной почты, и&nbsp;только потом исполнит его волю.</p>
+
+						<p>Google&nbsp;&mdash; первая из&nbsp;крупных интернет-компаний, официально запустившая подобную функцию. Вместе с&nbsp;тем, в&nbsp;соцсети Facebook существуют специальные <a href="#">приложения</a>, созданные сторонними разработчиками, которые позволяют оставить посмертные сообщения друзьям. Для пользователей Twitter, в&nbsp;свою очередь, существует <a href="#">сервис</a>, который будет твитить от&nbsp;их&nbsp;лица после смерти.</p>
 					</div>
 				</div>
-				<div class="news-item clearfix">
-					<div class="b-genre-label intrigue">Интрига</div>
-					<img src="images/news-image-2.jpg" class="news-item-image" alt="news-image-2.png">
-					<div class="news-item-content">
-						<h2 class="news-item-header"><a href="#">ФАС уличила ВГТРК в рекламе алкоголя при трансляции футбольного матча</a></h2>
-						<p class="news-item-description">
-							Проверка фотографий и видео-записей показала, что на рекламных стендах стадиона "Стэмфорд Бридж" во время указанного матча не были размещены рекламные плакаты данных производителей алкогольной продукции. Рассмотрение данного дела ФАС России назначил на 15 мая 2013 года.
-						</p>		
-					</div>
-				</div>
-				<div class="news-item clearfix">
-					<div class="b-genre-label investigation">Расследование</div>
-					<img src="images/news-image-3.jpg" class="news-item-image" alt="news-image-3.png">
-					<div class="news-item-content">
-						<h2 class="news-item-header"><a href="#">Возобновление борьбы за домены в зоне .рф маловероятно, считают юристы</a></h2>
-						<p class="news-item-description">
-							По всем 70914 доменным именам поступили заявки от клиентов, желающих их приобрести в указанном порядке", - говорится в тексте судебного решения от 16 ноября 2011 г. Апелляционная инстанция частично удовлетворила иск ФАС, а кассационная передала дело на рассмотрение в президиум ВАС.
-						</p>
-					</div>
-				</div>
+			</article>
+			<section class="old-news clearfix">
+				<header class="old-news-header">
+					Другие материалы рубрики
+				</header>
+			</section>
 		</div>
 		<footer class="b-page-footer">
 			<div class="copyright">
