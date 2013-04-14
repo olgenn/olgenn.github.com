@@ -91,7 +91,7 @@ body {
 
 .navigation-items .navigation-item {
 	display:inline-block;
-	padding: 0 19px 0 0;
+	padding: 0 10px 0 0;
 }
 
 .navigation-items .navigation-item a {
@@ -176,7 +176,7 @@ body {
 
 .news-article .news-note .news-note-image {
 	width: 179px;
-	margin: 0 0 22px 0;
+	margin: 0 0 16px 0;
 }
 
 .news-article .news-body {
@@ -199,13 +199,12 @@ body {
 .other-news {
 	height: 251px;
 	border-top: 3px solid  #b1b1b1;
-	padding: 0 0 33px 0;
 }
 
 .other-news .other-news-header {
 	width: 179px;
 	float: left;
-	padding: 10px 0 0 0;
+	padding: 8px 0 0 0;
 	font: 14px/18px 'PT Sans', sans-serif;
 	font-weight: bold;
 }
@@ -213,7 +212,7 @@ body {
 .other-news .other-news-items .other-news-item {
 	float: left;
 	width: 187px;
-	padding: 19px 0 0 20px;
+	padding: 4px 0 0 20px;
 	display: block;
 }
 
