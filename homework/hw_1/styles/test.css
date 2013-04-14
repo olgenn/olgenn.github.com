@@ -104,12 +104,12 @@ body {
 }
 
 .user-menu .user-menu-items {
-	margin: 3px 0 0 17px;
+	margin: 6px 0 0 17px;
 	padding: 0;
 }
 
 .user-menu .user-menu-items .user-menu-item {
-	height: 28px;
+	height: 24px;
 	padding: 0;
 	display: block;
 }
