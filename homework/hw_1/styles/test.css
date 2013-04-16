@@ -131,6 +131,7 @@ body {
 
 .navigation-items .navigation-item a {
 	font: 14px/16px 'PT Sans', sans-serif;
+	color: #003366;
 }
 
 .navigation-items .navigation-item.active a {
@@ -216,7 +217,6 @@ body {
 
 .news-article .news-body {
 	width: 600px;
-	padding: 0 0 0 20px;
 	float: right;
 }
 
@@ -229,6 +229,10 @@ body {
 .news-article .news-body .news-content {
 	font: 14px/18px 'PT Sans', sans-serif;
 	color: #333333;
+}
+
+.news-article .news-body .news-content {
+	color: #003366;
 }
 
 .other-news {
