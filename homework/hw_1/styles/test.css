@@ -73,7 +73,7 @@ body {
 .user-menu {
 	padding: 0 0 0 9px;
 	float: right;
-	width: 106px;
+	width: 108px;
 	height: 21px;
 	border: 1px solid #a6a6a6;
 	overflow: hidden;
@@ -100,7 +100,7 @@ body {
 }
 
 .user-menu .user-name .arrow {
-	font-size: 10px;
+	font-size: 9px;
 }
 
 .user-menu .user-menu-items {
