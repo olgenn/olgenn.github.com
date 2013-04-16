@@ -63,7 +63,7 @@ body {
 .log-in-cancel {
 	float: right;
 	text-decoration: none;
-	color: #666666;
+	color: #666;
 	font: 14px 'PT Sans', sans-serif;
 	border-bottom: 1px #666 dotted;
 	margin: 4px 0 0 0;
@@ -96,7 +96,7 @@ body {
 .user-menu .user-name {
 	font: 14px/20px 'PT Sans', sans-serif;
 	text-shadow: 1px 1px 2px #fff;
-	color: #666666;
+	color: #666;
 }
 
 .user-menu .user-name .arrow {
@@ -115,7 +115,7 @@ body {
 }
 
 .user-menu .user-menu-items .user-menu-item a {
-	color: #666666;
+	color: #666;
 	font: 14px 'PT Sans', sans-serif;
 }
 
@@ -205,7 +205,7 @@ body {
 
 .news-article .news-note {
 	font: 10px/16px 'Verdana', sans-serif;
-	color: #666666;
+	color: #666;
 	float: left;
 	width: 179px;
 	padding: 120px 0 0 0;
@@ -229,7 +229,7 @@ body {
 
 .news-article .news-body .news-content {
 	font: 14px/18px 'PT Sans', sans-serif;
-	color: #333333;
+	color: #333;
 }
 
 .news-article .news-body .news-content a {
@@ -237,7 +237,7 @@ body {
 }
 
 .other-news {
-	height: 251px;
+	padding: 0 0 24px 0;
 	border-top: 3px solid  #b1b1b1;
 }
 
@@ -270,7 +270,7 @@ body {
 .copyright {
 	margin: 0;
 	font: 12px 'PT Sans', sans-serif;
-	color: #666666;
+	color: #666;
 }
 
 .b-genre-label {
