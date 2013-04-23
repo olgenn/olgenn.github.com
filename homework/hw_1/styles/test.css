@@ -160,7 +160,7 @@ body {
 }
 
 .b-page-header .page-header-title  .dotted {
-	background: url('../images/dott.png') no-repeat center center;
+	background: url('../images/dotted.png') no-repeat center center;
 	display: inline-block;
 	width: 8px;
 	height: 10px;
