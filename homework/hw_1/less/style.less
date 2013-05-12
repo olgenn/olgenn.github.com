@@ -1,3 +1,29 @@
+.font-face(@fontname, @fontfile, @fontweight, @fontstyle) {
+    font-family: "@{fontname}";
+    src: url("../fonts/@{fontfile}.eot");
+    src: url("../fonts/@{fontfile}.eot") format('embedded-opentype'),
+         url("../fonts/@{fontfile}.woff") format('woff'),
+         url("../fonts/@{fontfile}.ttf") format('truetype');
+    font-weight: @fontweight;
+    font-style: @fontstyle;
+ }
+
+@font-face {
+ 	.font-face(PT Sans, pts55f, normal, normal)
+}
+
+@font-face {
+ .font-face(PT Sans, pts75f, bold, normal)
+ }
+
+@font-face {
+ .font-face(PT Sans, pts56f, normal, italic)
+ }
+
+@font-face {
+ .font-face(PT Serif, pt_serif-web-bold, bold, normal)
+}
+
 body {
 	background: url('../images/body-bg.png');
 }
@@ -43,7 +69,7 @@ body {
 	height: 21px;
 	border: 1px solid #a6a6a6;
 	overflow: hidden;
-	border-radius: 10px;
+	.border-radius(10px);
 	
 	.transition(~"all 0.5s ease"); 
 	.gradient(~"linear-gradient(0deg, #fefefe 0%,#dbdbdb 95%,#bebebe 100%)");
