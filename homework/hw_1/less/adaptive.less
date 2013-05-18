@@ -1,0 +1,167 @@
+@media screen and (min-width: 1500px) {
+	.b-page-wrapper {
+		width: 1200px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.b-page-wrapper {
+		width: 85%;
+	}
+
+	.b-page-footer,
+	.b-page-header,
+	.b-page-content {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.b-page-wrapper {
+		width: 90%;
+	}
+
+	.b-page-header {
+		width: 80%;
+	}
+
+	.b-page-navigation {
+		margin: 0;
+		padding: 16px 0 0 0;
+		clear: left;
+		text-align: center;
+	}
+
+	.b-page-content {
+		width: 80%;
+
+		.news-items {
+
+			.news-item {
+
+				.news-item-content {
+					padding: 0;
+					
+					.news-item-header{
+						padding: 12px 0 0 0;
+					}
+				}
+
+				.b-genre-label {
+					left: 149px;
+				}
+
+			}
+
+		}
+
+		.other-news {
+			.other-news-header {
+				width: 100%;
+				float: none;
+			}
+
+			.other-news-items {
+				width: 100%;						
+				float: none;
+			}
+		}
+	}
+
+	.b-page-footer {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	
+	.page-label {
+		margin-left: 6.25%;								/* 40/640 = 0.0625 */
+	}
+	
+	.user-menu,
+	.log-in {
+		margin-right: 6.25%;								/* 40/640 = 0.0625 */
+	}
+
+	.b-page-wrapper {
+		width: 100%; 									/* 562/640 = 0.878125 */
+	}
+	
+	.b-page-header,
+	.b-page-footer {
+		width: 87.8125%; 								/* 562/640 = 0.878125 */
+	}
+
+	.b-page-navigation {
+		width: 87.8125%; 								/* 562/640 = 0.878125 */ 
+		text-align: left;
+		margin: 0 auto;
+	}
+
+	.b-page-content {
+		width: 87.8125%;
+
+		.news-items {
+
+			.news-item {
+
+				.news-item-content {
+
+					.news-item-description {
+						clear: both;
+					}
+				}
+			}
+		}
+
+		.news-article {
+
+			.news-note {
+				display: none;
+			}
+
+			.news-body {
+				width: 100%;
+				float: none;
+			}
+
+		}
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	.b-page-content {
+
+		.news-items {
+
+			.news-item {
+
+				.news-item-content {
+					
+					.news-item-header{
+						clear: both;
+					}
+				}
+			}
+		}
+	}
+
+
+.b-login-layer {
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+	.login-window {
+		position: absolute;
+		padding: 36px 0 0 49px;
+		margin: 30px 0 0 -163px;
+		width: 280px;
+		
+	}
+}
+
+}
