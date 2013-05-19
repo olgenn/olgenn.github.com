@@ -15,7 +15,7 @@
 @font-face {
  	.font-face(PT Sans, pts75f, bold, normal)
  }
- 
+
 @font-face {
  	.font-face(PT Sans, pts56f, normal, italic)
  }
@@ -188,15 +188,20 @@ body {
 
 	.login-window {
 		position: fixed;
-		padding: 36px 0 0 64px;
+		padding: 0 0 0 64px;
 		top: 50%;
 		left: 50%;
 		margin: -115px 0 0 -178px;
 		width: 310px;
-		height: 173px;
+		height: 0;
+		overflow: hidden;
 		background: #fff;
 		box-shadow: 1px 0px 40px 7px #000;
-
+		.border-radius(10px);
+		
+		form {
+			padding: 36px 0 0 0;
+		}
 		.login-buttons {
 			margin: 23px 0 0 0;
 			width: 127px;
