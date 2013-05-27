@@ -74,7 +74,7 @@
 
 
 .news-article {
-	padding: 100px 0 72px 0;
+	padding: 100px 0 41px 0;
 
 	.news-note {
 		font: 0.625em 'Verdana', sans-serif;          				/* 10/16 = 0.625 */
@@ -110,6 +110,62 @@
 		}
 	}
 
+}
+
+.news-comments {
+	padding: 0 0 37px (144/800)*100%;
+	
+	.news-comment-content {
+		padding: 25px;
+		background: #fff;
+		border: 1px solid #ccc;
+		.box-shadow(~"1px 1px 0px #ccc, inset 0px 0px 1px #ccc");
+
+		.news-comment-header {
+			font: 18/16em 'PT Sans', sans-serif;
+			font-weight: bold;
+		}
+
+		.form-wrapper {
+			.comment-form {
+				.form-row {
+					position: relative;
+					padding: 12px 0 0 0;
+
+					input[type=text],
+					textarea {
+						padding: 6px;
+						border: 1px solid #c6c6c6;
+						.box-shadow(~"1px 1px 1px #ccc, inset 1px 1px 1px #ccc");
+						font: 12/16em 'PT Sans', sans-serif;
+						outline: none;
+					}
+
+					input[type=text] {
+						width: 227px; 
+					}
+
+					textarea {
+						height: 62px;
+						resize:none;
+						.box-sizing(border-box);
+						width: 100%;
+						
+						&:focus {
+							height: 94px;
+						}
+					}
+
+					input[type=submit] {
+						float: right;
+						font: 12/16em 'PT Sans', sans-serif;
+						font-weight: bold;
+						height: 24px;
+					}
+				}
+			}
+		}
+	}
 }
 
 

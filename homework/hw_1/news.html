@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
 	<title>LOREM IPSUM NEWS</title>
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 	<link rel="stylesheet/less" type="text/css" href="less/all.less" />
@@ -54,6 +55,24 @@
 					</div>
 				</div>
 			</article>
+			<section class="news-comments">
+				<div class="news-comment-content">
+					<header class="news-comment-header">Комментарии(10)</header>
+					<div class="form-wrapper">
+						<form action="comment/publish" class="comment-form">
+							<div class="form-row">
+								<input type="text" name="username" placeholder="Представьтесь, пожалуйста"/>
+							</div>
+							<div class="form-row">
+								<textarea name="comment" id="" placeholder="Введите текст сообщения..." ></textarea>
+							</div>
+							<div class="form-row clearfix">
+								<input type="submit" value="Добавить комментарий"/>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
 			<section class="other-news clearfix">
 				<header class="other-news-header">
 					Другие материалы рубрики
