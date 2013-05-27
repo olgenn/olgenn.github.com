@@ -41,6 +41,28 @@ $$.initLogin = function(){
 	})
 }
 
+ $$.validateForm = function(){
+ 	$('.news-comments').on('submit', '.comment-form', function(event){
+ 		event.preventDefault();
+ 		var $form = $(this);
+ 			
+ 		if (($form.find('input[type=text]').val() == '') || ($form.find('textarea').val() == '')) {
+ 			$form.addClass('error');
+ 		} else {
+ 			$form.find('input[type=text]').val('');
+ 			$form.find('textarea').val('');
+ 			$form.removeClass('error')
+ 		}
+
+ 	})
+ }
+
 jQuery(function init() {
-        $$.initLogin()
+        $$.initLogin();
+        $$.validateForm();
 });
+
+
+
+
+
