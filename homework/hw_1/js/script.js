@@ -57,9 +57,34 @@ $$.initLogin = function(){
  	})
  }
 
+ $$.getCommentForm = function(){
+ 	$('.news-comments').on('click', '.comment-answer', function(event){
+ 		event.preventDefault();
+		var $comment_answer = $(this).closest('.news-comment-item').children('.news-comment-item-answers'),
+			$form = $comment_answer.children('.form-wrapper')
+
+		if ($form.length) {
+			if ($form.is(':visible')) {
+				$form.hide();
+			} else {
+				$('.news-comment-item .form-wrapper').hide()
+				$form.show();
+			}
+		} else {
+			$.get('comment_form.html')
+				.done(function(data) {
+					$('.news-comment-item .form-wrapper').hide();
+					$(data).prependTo($comment_answer);
+			})
+ 		}
+ 	})
+ }
+
+
 jQuery(function init() {
         $$.initLogin();
         $$.validateForm();
+        $$.getCommentForm();
 });
 
 
