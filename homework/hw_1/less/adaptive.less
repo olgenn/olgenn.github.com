@@ -7,6 +7,10 @@
 @media screen and (max-width: 1024px) {
 	.b-page-wrapper {
 		width: 85%;
+		
+		.news-comments {
+			padding-left: 0;
+		}
 	}
 
 	.b-page-footer,
@@ -18,7 +22,16 @@
 
 @media screen and (max-width: 800px) {
 	.b-page-wrapper {
-		width: 90%;
+
+		.news-comments {
+			.news-comments-content {
+				.news-comment-item {
+					.news-comment-item-answers>.news-comment-item {
+						margin: 0 0 0 20px;
+					}
+				}
+			}
+		}
 	}
 
 	.b-page-header {
