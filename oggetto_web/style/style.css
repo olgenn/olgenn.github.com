@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'helvetica';
-    src: url('../fonts/helvetica_ce_regular-webfont.eot');
-    src: url('../fonts/helvetica_ce_regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/helvetica_ce_regular-webfont.woff') format('woff'),
-    url('../fonts/helvetica_ce_regular-webfont.ttf') format('truetype');
+    src: url('../oggetto_web/fonts/helvetica_ce_regular-webfont.eot');
+    src: url('../oggetto_web/fonts/helvetica_ce_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../oggetto_web/fonts/helvetica_ce_regular-webfont.woff') format('woff'),
+    url('../oggetto_web/fonts/helvetica_ce_regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -132,7 +132,7 @@ body.ie7 .user-panel .user-links {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../images/search.png") no-repeat;
+    background: url("../oggetto_web/images/search.png") no-repeat;
     width: 21px;
     height: 17px;
     cursor: pointer;
@@ -167,7 +167,7 @@ body.ie7 .user-panel .user-links {
 .user-recycle .recycle-button {
     width: 70px;
     height: 55px;
-    background: url("../images/recycle.png") no-repeat top left;
+    background: url("../oggetto_web/images/recycle.png") no-repeat top left;
     text-align: right;
     line-height: 55px;
     font-size: 11px;
@@ -233,7 +233,7 @@ body.ie7 .user-panel .user-links {
     height: 36px;
     right: -7px;
     top: 0;
-    background: url("../images/menu-item-bg2.png") no-repeat;
+    background: url("../oggetto_web/images/menu-item-bg2.png") no-repeat;
     display: none;
 }
 
@@ -242,7 +242,7 @@ body.ie7 .user-panel .user-links {
 }
 
 .sidebar .menu-items .menu-item.active {
-    background: url("../images/menu-item-bg.png") no-repeat top left;
+    background: url("../oggetto_web/images/menu-item-bg.png") no-repeat top left;
     border-bottom: 1px solid #000;
     color: #a7e00d
 }
@@ -324,11 +324,11 @@ body.ie7 .user-panel .user-links {
     right: 0px;
     width: 30px;
     height: 30px;
-    background: url("../images/add-button.png");
+    background: url("../oggetto_web/images/add-button.png");
 }
 
 .catalog-item .button-buy:hover {
-    background: url("../images/add-button-hover.png");
+    background: url("../oggetto_web/images/add-button-hover.png");
 }
 
 .catalog-item .b-zoom-item {
@@ -409,7 +409,7 @@ body.ie7 .user-panel .user-links {
 .online-services .subscribe .sub-line-text .sub-button {
     width: 30px;
     height: 20px;
-    background: url("../images/subscribe-button.png");
+    background: url("../oggetto_web/images/subscribe-button.png");
     float: right;
 }
 
