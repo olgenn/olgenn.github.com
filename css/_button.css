@@ -1,0 +1,29 @@
+.b-btn {
+  display: inline-block;
+  min-width: 204px;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 54px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 54px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 27px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: background-color .28s ease, color .28s ease;
+  -moz-transition: background-color .28s ease, color .28s ease;
+  -ms-transition: background-color .28s ease, color .28s ease;
+  -o-transition: background-color .28s ease, color .28s ease;
+  transition: background-color .28s ease, color .28s ease;
+}
+.b-btn._white {
+  background-color: #fff;
+  color: #3695ff;
+}
+.b-btn._white:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}

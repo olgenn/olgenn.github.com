@@ -1,13 +1,12 @@
 .b-cover-section {
-  padding-top: 100px;
-  padding-bottom: 150px;
-  min-height: 100vh;
   background: #3695ff url("../images/cover-section-bg.jpg") no-repeat center;
   background-size: cover;
   box-sizing: border-box;
 }
 .b-cover-section .content-size {
   position: relative;
+  padding-top: 100px;
+  padding-bottom: 140px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -40,4 +39,26 @@
   vertical-align: bottom;
   width: 100%;
   height: auto;
+}
+.b-cover-section .cover-section-caption {
+  margin-top: 60px;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.b-cover-section .cover-section-button {
+  margin-top: 70px;
+  text-align: center;
+}
+.b-cover-section .cover-section-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  margin-left: -10px;
+  width: 20px;
+  height: 32px;
+  background: url("../images/svg/arrow-down.svg") no-repeat center;
 }

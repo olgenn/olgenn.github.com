@@ -2,8 +2,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-size: 100%;
-  line-height: 1.2em;
+  font: 100%/1.2 'Lato', Arial, sans-serif;
   color: #000;
   background: #fff;
 }

@@ -1,20 +1,17 @@
 @import "_mixins";
 
 .b-cover-section {
-  padding-top: 100px;
-  padding-bottom: 150px;
-  min-height: 100vh;
   background: #3695ff url("../images/cover-section-bg.jpg") no-repeat center;
   background-size: cover;
   box-sizing: border-box;
-
   .content-size {
     position: relative;
+    padding-top: 100px;
+    padding-bottom: 140px;
     .flex-display();
     .flex-direction(column);
     .align-items(center);
   }
-
   .cover-section {
     &-avatar {
       .flex-shrink(0);
@@ -30,6 +27,28 @@
         width: 100%;
         height: auto;
       }
+    }
+    &-caption {
+      margin-top: 60px;
+      font-size: 50px;
+      line-height: 60px;
+      font-weight: 900;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &-button {
+      margin-top: 70px;
+      text-align: center;
+    }
+    &-arrow {
+      position: absolute;
+      left: 50%;
+      bottom: 24px;
+      margin-left: -20px/2;
+      width: 20px;
+      height: 32px;
+      background: url("../images/svg/arrow-down.svg") no-repeat center;
     }
   }
 }
