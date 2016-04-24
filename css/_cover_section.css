@@ -60,5 +60,6 @@
   margin-left: -10px;
   width: 20px;
   height: 32px;
+  opacity: .2;
   background: url("../images/svg/arrow-down.svg") no-repeat center;
 }
