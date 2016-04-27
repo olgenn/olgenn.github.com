@@ -1,0 +1,22 @@
+@import "_variables";
+@import "_mixins";
+
+.b-clients-section {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  background-color: #f1f8ff;
+  .clients {
+    &-caption {
+      font: 300 50px/1 @lato;
+      color: @blue_color;
+      text-align: center;
+    }
+    &-list {
+      .flex-display();
+      .align-items(center);
+      &-item {
+        .flex-shrink(0);
+      }
+    }
+  }
+}

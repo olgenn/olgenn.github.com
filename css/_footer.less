@@ -1,0 +1,26 @@
+@import "_variables";
+@import "_mixins";
+
+.b-footer {
+  background: #3695ff url("../images/cover-section-bg.jpg") no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+  .content-size {
+    .flex-display();
+    .align-items(center);
+    .justify-content(center);
+    height: 250px;
+  }
+  .footer {
+    &-caption {
+      font: 300 40px/1 @lato;
+      color: #fff;
+      strong {
+        font-weight: 500;
+      }
+    }
+  }
+  .b-btn {
+    margin-left: 50px;
+  }
+}

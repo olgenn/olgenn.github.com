@@ -1,0 +1,31 @@
+.b-footer {
+  background: #3695ff url("../images/cover-section-bg.jpg") no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.b-footer .content-size {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  height: 250px;
+}
+.b-footer .footer-caption {
+  font: 300 40px/1 'Lato', Arial, sans-serif;
+  color: #fff;
+}
+.b-footer .footer-caption strong {
+  font-weight: 500;
+}
+.b-footer .b-btn {
+  margin-left: 50px;
+}

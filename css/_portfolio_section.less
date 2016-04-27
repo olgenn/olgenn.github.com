@@ -1,0 +1,35 @@
+@import "_variables";
+@import "_mixins";
+
+.b-portfolio-section {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  background-color: #fff;
+  .portfolio {
+    &-caption {
+      font: 300 50px/1 @lato;
+      color: @blue_color;
+      text-align: center;
+    }
+    &-list {
+      padding-top: 40px;
+      .flex-display();
+      .align-items(flex-start);
+      &-item {
+        .flex-shrink(0);
+        margin-top: 50px;;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: calc(100%/3);
+        box-sizing: border-box;
+        &-link {
+          display: block;
+          height: 270px;
+          background-color: #f4f4f4;
+          border-radius: 10px;
+          .transition(all .28s ease);
+        }
+      }
+    }
+  }
+}
