@@ -1,0 +1,320 @@
+.calldrone {
+
+  div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  button,
+  input {
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+
+    &:hover {
+      outline: none;
+      border: none;
+    }
+  }
+}
+@mixin mainTransition {
+  transition: all .28s ease;
+}
+
+/*style*/
+.calldrone {
+  position: fixed;
+  width: 61px;
+  height: 61px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #283961;
+  border-radius: 30px;
+  z-index: 99;
+  transition: all .4s .2s ease;
+
+  div,
+  button,
+  input,
+  a,
+  span {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .calldrone-big {
+    height: 0;
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .calldrone-text{
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+
+    .calldrone-text-marker {
+      color: #36c7ff;
+    }
+  }
+  .calldrone-main-button {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #b3f19a;
+    position: absolute;
+    right: 25px;
+    bottom: -23px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 0 28px 6px rgba(179,241,154,.57);
+    z-index: 99;
+
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  .calldrone-main-logo {
+    position: absolute;
+    height: 61px;
+    width: 61px;
+    bottom: 0;
+    left: 0;
+
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  >.calldrone-small-description {
+    position: absolute;
+    left: 95px;
+    bottom: 10px;
+    opacity: 0;
+    transition: opacity .28s 0s ease;
+  }
+
+  &:hover, //-------------------------------hover на маленький значёк
+  &.hover {
+    width: 302px;
+    transition-delay: 0s;
+
+    >.calldrone-small-description {
+      opacity: 1;
+      transition-delay: .3s;
+    }
+  }
+
+  &.active {
+    height: 391px;
+    width: 302px;
+
+    >.calldrone-small-description {
+      transition: opacity .28s ease;
+      opacity: 0;
+    }
+    >.calldrone-main-logo {
+      transition: opacity .28s ease;
+      opacity: 0;
+    }
+    .calldrone-big {
+      transition: height 0s ease, opacity .28s .4s ease;
+      height: 100%;
+      opacity: 1;
+      padding-top: 12px;
+      text-align: center;
+
+      .calldrone-close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        opacity: .3;
+        cursor: pointer;
+        user-select: none;
+        z-index: 99;
+        @include mainTransition;
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+      .calldrone-main-logo {
+        position: relative;
+        margin: 0 auto;
+      }
+      .calldrone-timing-wrapper {
+        opacity: 1;
+        transition: all .28s ease;
+
+        .calldrone-big-description {
+          font-size: 16px;
+          text-align: center;
+          padding-top: 4px;
+        }
+        .calldrone-form {
+          text-align: center;
+          margin: 21px 0 14px;
+
+          .calldrone-phone-field {
+            width: 252px;
+            background-color: #152148;
+            font-size: 16px;
+            box-sizing: border-box;
+            padding: 0 15px;
+            text-align: center;
+            color: #fff;
+            margin: 0 auto;
+          }
+          .calldrone-call-button {
+            width: 188px;
+            background-color: #b3f19a;
+            font-size: 17px;
+            color: #5a8947;
+            margin: 16px auto 0;
+            cursor: pointer;
+            user-select: none;
+            box-shadow: 0 0 35px 10px rgba(179,241,154,.19);
+            @include mainTransition;
+
+            &:hover {
+              opacity: .8;
+            }
+          }
+          .calldrone-phone-field,
+          .calldrone-call-button {
+            height: 50px;
+            border-radius: 30px;
+            line-height: 49px;
+          }
+        }
+        .calldrone-timing {
+          font-size: 13px;
+          color: #fff;
+          opacity: .5;
+          cursor: pointer;
+          @include mainTransition;
+
+          &:hover {
+            opacity: .8;
+          }
+        }
+      }
+      .calldrone-timer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -1;
+
+        .calldrone-timer-watch {
+          display: none;
+          position: relative;
+          width: 177px;
+          height: 177px;
+          margin: 96px auto 20px;
+
+          .calldrone-timer-counter {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+          }
+          .calldrone-timer-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+
+            .calldrone-timer-circle {
+              stroke-dasharray: 530;
+              stroke-dashoffset: 0;
+              animation: dash 30s linear;
+
+
+
+              //-----------------------------------Таймер анимации (30сек)
+              @keyframes dash {
+                from {
+                  stroke-dashoffset: -530;
+                }
+                to {
+                  stroke-dashoffset: 0;
+                }
+              }
+
+
+
+            }
+          }
+        }
+        .calldrone-timer-description {
+          font-size: 13px;
+          color: rgba(255,255,255,.5);
+        }
+      }
+      .calldrone-promotion {
+        position: absolute;
+        bottom: 32px;
+        left: 36px;
+        font-size: 12px;
+        color: #fff;
+        opacity: .22;
+        z-index: 99;
+        @include mainTransition;
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+    &.timer {
+
+      .calldrone-timing-wrapper {
+        opacity: 0;
+      }
+      .calldrone-timer {
+        transition: all .28s .28s ease;
+        z-index: 1;
+        opacity: 1;
+
+        .calldrone-timer-watch {
+          display: table;
+        }
+      }
+    }
+  }
+}
