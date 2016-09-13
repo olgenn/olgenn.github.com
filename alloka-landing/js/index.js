@@ -41,7 +41,7 @@ $(document).ready(function(){
         $('.slider-tip_wrap').find('.slider-tip').eq(step - 1).addClass('active');
     });
 
-    $('.preview-slider .top-layer .ground').on('click', function(){
+    $('.preview-slider .top-layer').on('click', '.ground, .layer-tip', function(){
         $($nouteCarousel).trigger('to.owl.carousel', [0,100]);
         $(this).parent('.top-layer').fadeOut(500, function(){
             $(this).siblings('.owl-carousel').find('.owl-controls').fadeIn(0, function(){

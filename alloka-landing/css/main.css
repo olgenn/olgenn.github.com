@@ -448,8 +448,11 @@ body.index {
             height: 37px;
             width: 1px;
             background-color: #e6ecf3; }
+          body.index .main-wrapper .header .content-wrapper .menu .user-login .login-option .login-option_link:not(.button):hover {
+            color: #52bd00;
+            opacity: 1; }
   body.index .main-wrapper .preview {
-    height: 711px;
+    height: 626px;
     padding-top: 85px;
     background: url("../images/index/bg-preview.png") 0 -130px no-repeat; }
     body.index .main-wrapper .preview .content-wrapper {
@@ -524,7 +527,9 @@ body.index {
             font-size: 17px;
             line-height: 22px;
             background-color: #fff;
-            z-index: 999; }
+            cursor: pointer;
+            z-index: 999;
+            transition: all .28s ease; }
             body.index .main-wrapper .preview .content-wrapper .preview-slider .top-layer .layer-tip:hover {
               opacity: .7; }
             body.index .main-wrapper .preview .content-wrapper .preview-slider .top-layer .layer-tip:after {
@@ -634,7 +639,7 @@ body.index {
   body.index .main-wrapper .about {
     text-align: center;
     padding-top: 85px;
-    height: 1126px;
+    height: 1040px;
     overflow: hidden; }
     body.index .main-wrapper .about .content-wrapper {
       padding: 0; }
@@ -721,6 +726,8 @@ body.index {
               top: 2px;
               left: -28px;
               padding-right: 13px; }
+            body.index .main-wrapper .about .content-wrapper .selecter-block .about-content_wrapper .content-box .alloka-info:hover {
+              opacity: .7; }
           body.index .main-wrapper .about .content-wrapper .selecter-block .about-content_wrapper .about-button_wrapper .alloka-button {
             margin-top: 40px; }
           body.index .main-wrapper .about .content-wrapper .selecter-block .about-content_wrapper .about-button_wrapper .time-info {
@@ -1027,7 +1034,7 @@ body.index {
     body.index .main-wrapper .blogs .content-wrapper .blogs-content {
       display: flex;
       justify-content: center;
-      padding-bottom: 46px; }
+      padding-bottom: 75px; }
       body.index .main-wrapper .blogs .content-wrapper .blogs-content .visit-event .visit-event_box {
         height: 418px;
         width: 399px;
@@ -1210,7 +1217,7 @@ body.index {
 
 body.apidocs .main-wrapper .header {
   background-color: #162029;
-  height: 115px;
+  height: 114px;
   padding-bottom: 2px; }
   body.apidocs .main-wrapper .header .content-wrapper {
     height: 100%;
@@ -1230,16 +1237,40 @@ body.apidocs .main-wrapper .header {
         font-weight: bold;
         color: #fff;
         margin-right: 45px; }
-    body.apidocs .main-wrapper .header .content-wrapper .menu {
+    body.apidocs .main-wrapper .header .content-wrapper .header-nav {
       height: 100%;
-      width: 100%; }
-      body.apidocs .main-wrapper .header .content-wrapper .menu .top-nav {
+      padding: 14px 0 0 62px; }
+      body.apidocs .main-wrapper .header .content-wrapper .header-nav .nav {
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center; }
-        body.apidocs .main-wrapper .header .content-wrapper .menu .top-nav .nav-link {
-          font-size: 15px;
-          color: #fff; }
-          body.apidocs .main-wrapper .header .content-wrapper .menu .top-nav .nav-link.active {
-            color: #5e676e; }
+        body.apidocs .main-wrapper .header .content-wrapper .header-nav .nav li {
+          margin-left: 64px; }
+          body.apidocs .main-wrapper .header .content-wrapper .header-nav .nav li:first-child {
+            margin-left: 0; }
+          body.apidocs .main-wrapper .header .content-wrapper .header-nav .nav li .nav-link {
+            font-size: 15px;
+            color: #fff; }
+            body.apidocs .main-wrapper .header .content-wrapper .header-nav .nav li .nav-link.active {
+              color: #5e676e; }
+
+body.apidocs .main-wrapper .menu {
+  height: 93px;
+  background-color: #52bd00; }
+  body.apidocs .main-wrapper .menu .content-wrapper .menu-block .menu-block_title {
+    font-size: 14px; }
+    body.apidocs .main-wrapper .menu .content-wrapper .menu-block .menu-block_title .title {
+      font-size: 25px;
+      color: #fff;
+      text-transform: uppercase; }
+    body.apidocs .main-wrapper .menu .content-wrapper .menu-block .menu-block_title span {
+      color: #52bd00;
+      font-size: 13px; }
+    body.apidocs .main-wrapper .menu .content-wrapper .menu-block .menu-block_title .menu-block {
+      display: none;
+      width: 330px; }
+      body.apidocs .main-wrapper .menu .content-wrapper .menu-block .menu-block_title .menu-block .menu-block_title {
+        background-color: #fff;
+        height: 56px;
+        border-top: 1px solid #ecf2f5; }
