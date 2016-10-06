@@ -2,12 +2,12 @@ $(document).ready(function(){
 //header fixed
     $(window).on('scroll', function(){
         if ($(window).scrollTop() > 1) {
-            $('body').addClass('header-fixed');
+            $('.body-wrap').addClass('header-fixed');
             $('.header').css({
                 left: - $(window).scrollLeft()
             });
         } else {
-            $('body').removeClass('header-fixed');
+            $('.body-wrap').removeClass('header-fixed');
             $('.header').css({
                 left: 0
             });
@@ -15,17 +15,9 @@ $(document).ready(function(){
     });
 
 //slider
-    $('.preview-slider .top-layer .ground').on('click', function(){
-        $(this).parent('.top-layer').fadeOut(500, function(){
-            $(this).siblings('.owl-carousel').find('.owl-controls').fadeIn(0, function(){
-                $(this).parents('.preview-slider').find('.slider-tip_wrap').addClass('active').find('.slider-tip').eq(0).addClass('active');
-            }).addClass('active');
-        });
-    });
-
     var $carouselPrev = $('.owl-carousel'),
-        $nouteCarousel = $('.preview-slider');
-    
+        $nouteCarousel = $('.preview-slider .owl-carousel');
+
     $carouselPrev.owlCarousel({
         items : 1,
         autoplay: 4000,
@@ -47,6 +39,16 @@ $(document).ready(function(){
         }
         $('.slider-tip_wrap').find('.slider-tip.active').removeClass('active');
         $('.slider-tip_wrap').find('.slider-tip').eq(step - 1).addClass('active');
+    });
+
+    $('.preview-slider .top-layer').on('click', '.ground, .layer-tip', function(){
+        $($nouteCarousel).trigger('to.owl.carousel', [0,100]);
+        $(this).parent('.top-layer').fadeOut(500, function(){
+            $(this).siblings('.owl-carousel').find('.owl-controls').fadeIn(0, function(){
+                $(this).parents('.preview-slider').find('.slider-tip_wrap')
+                    .addClass('active').find('.slider-tip').eq(0).addClass('active');
+            }).addClass('active');
+        });
     });
 
 //select about block
@@ -77,37 +79,16 @@ function textAnimate() {
     var length = $('.h3-dinamic .dinamic-text').length - 1;
     
     $('.h3-dinamic .dinamic-text').each(function(index) {
-        var windowWidth = $(window).width();
-        if(windowWidth > 1540){
-            if($(this).hasClass('active') && index != length) {
-                $(this).removeClass('active').fadeOut(500, function(){
-                    $(this).next('.dinamic-text').addClass('active').fadeIn(500);
-                });
-                return false;
-            } else if (index == length) {
-                $(this).removeClass('active').fadeOut(500, function(){
-                    $('.h3-dinamic .dinamic-text').eq(0).addClass('active').fadeIn(500);
-                });
-                return false;
-            }
-        } else {
-            if($(this).hasClass('active') && index != length) {
-                $(this).parent('.paragraph').fadeOut(500, function(){
-                    $(this).find('.active').removeClass('active').fadeOut(0, function(){
-                        $(this).next('.dinamic-text').addClass('active').fadeIn(0).parent('.paragraph').fadeIn(500);
-                    });
-                });
-                return false;
-            } else if (index == length) {
-                $(this).parent('.paragraph').fadeOut(500, function() {
-                    $(this).find('.active').removeClass('active').fadeOut(0, function () {
-                        $('.h3-dinamic .dinamic-text').eq(0).addClass('active').fadeIn(0, function(){
-                            $(this).parent('.paragraph').fadeIn(500);
-                        });
-                    });
-                });
-                return false;
-            }
+        if($(this).hasClass('active') && index != length) {
+            $(this).removeClass('active').fadeOut(500, function(){
+                $(this).next('.dinamic-text').addClass('active').fadeIn(500);
+            });
+            return false;
+        } else if (index == length) {
+            $(this).removeClass('active').fadeOut(500, function(){
+                $('.h3-dinamic .dinamic-text').eq(0).addClass('active').fadeIn(500);
+            });
+            return false;
         }
     });
 }
